@@ -1,0 +1,55 @@
+.the-main-container {
+  background-color: #18191a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-container {
+  background-color: #18191a;
+  width: 1366px;
+  max-height: 768px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.second > div {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  flex: 1;
+}
+.first {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.second {
+  display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .the-main-container {
+    background-color: #18191a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-container {
+    padding: 10px;
+  }
+
+  .second {
+    flex-direction: column;
+  }
+
+  .second > div {
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .first {
+    margin-top: 80px;
+  }
+}

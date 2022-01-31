@@ -1,0 +1,33 @@
+<div class="add-task-con">
+  <div class="add-todo-header">
+    <h1>ADD To-do List</h1>
+  </div>
+
+  <div class="add-form-main">
+    <form class="add-form-con" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="text">Task Title</label>
+        <input type="text" name="text" [(ngModel)]="text" id="text" />
+      </div>
+      <div>
+        <label for="day">Task Day</label>
+        <input type="text" name="day" [(ngModel)]="day" id="day" />
+      </div>
+      <div>
+        <label for="reminder">Task Reminder</label>
+        <input
+          type="text"
+          name="reminder"
+          [(ngModel)]="reminder"
+          id="reminder"
+        />
+      </div>
+      <section><input type="submit" value="Submit Task" /></section>
+    </form>
+  </div>
+  <div class="user-input">
+    <p><span>Text Title:</span> {{ text }}</p>
+    <p><span>Text Day:</span> {{ day }}</p>
+    <p><span>Text Reminder: </span>{{ reminder }}</p>
+  </div>
+</div>

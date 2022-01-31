@@ -1,0 +1,110 @@
+.add-task-con {
+  display: flex;
+  flex-direction: column;
+  background-color: #18191a;
+  padding: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.add-todo-header {
+  padding: 10px;
+  background-color: #2374e1;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+  border-radius: 5px;
+}
+.add-todo-header:hover {
+  transform: scale(1.02);
+}
+
+.add-form-main {
+  padding: 10px;
+  background-color: #242526;
+  border-radius: 5px;
+}
+.add-form-con {
+  background-color: #242526;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.add-form-con > div {
+  display: flex;
+  flex-direction: column;
+}
+.add-form-con input {
+  padding: 10px;
+  margin: 9px 0;
+  border-radius: 5px;
+  border: none;
+  transition: 0.25s;
+  background-color: #3a3b3c;
+}
+.add-form-con input:hover {
+  transform: scaleX(1.05);
+}
+.add-form-con input:active {
+  transform: scaleX(1.05);
+  background-color: #2374e1;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section input {
+  background-color: #2374e1 !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+
+.user-input {
+  background-color: #242526;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 85px;
+  border-radius: 5px;
+}
+
+.user-input span {
+  font-weight: bold;
+}
+.user-input > p {
+  margin: 5px;
+}
+
+/* overflow-design */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 900px) {
+  .add-task-con {
+    padding: 10px;
+  }
+  .add-form-main {
+    padding: 10px;
+  }
+  .add-form-con {
+    padding: 10px 0;
+  }
+}

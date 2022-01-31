@@ -1,0 +1,15 @@
+<div class="todo-con">
+  <div class="todo-con-header">
+    <h1>To-Do List</h1>
+  </div>
+  <div class="todo-con-list">
+    <div class="list" *ngFor="let task of taskVariable">
+      <h2>{{ task.text }}</h2>
+      <p style="margin: 7px 0px">{{ task.day }}</p>
+      <p>{{ task.reminder }}</p>
+      <div class="todo-del-btn">
+        <button (click)="deleteTask(task)">X</button>
+      </div>
+    </div>
+  </div>
+</div>
